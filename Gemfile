@@ -40,6 +40,7 @@ gem 'rspec-rails'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
+gem 'role_model'
 
 gem 'devise'
 
