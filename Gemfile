@@ -38,6 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'rspec-rails'
 gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'jquery-rails'
+
 gem 'devise'
 
 group :development, :test do
