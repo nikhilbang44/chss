@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '51d66388e4bbebb378f6e3e7464379979e65ae63df2708cb5247cd84b756442b7f7944d2c72a218ba05aef462ee62601bee08a2ff3af39e11f394500108016a3'
+  config.secret_key = '51d66388e4bbebb378f6e3e7464379979e65ae63df2708cb5247cd84b756442b7f7944d2c72a218ba05aef462ee62601bee08a2ff3af39e11f394500108016a3'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -18,13 +18,13 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'no-replay@chss.com'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
-  # config.parent_mailer = 'ActionMailer::Base'
+  config.parent_mailer = 'ActionMailer::Base'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -117,10 +117,10 @@ Devise.setup do |config|
   # config.pepper = '5d2bb2450afdbfa8fe7fb7819edf3be852bdf7a7d05534f09bf04606ceddbe99c27a3cf41480587f10c580af80af0d709e34196d64d5aeb00a0bb4dbdfb1de24'
 
   # Send a notification to the original email when the user's email is changed.
-  # config.send_email_changed_notification = false
+  config.send_email_changed_notification = true
 
   # Send a notification email when the user's password is changed.
-  # config.send_password_change_notification = false
+  config.send_password_change_notification = true
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
